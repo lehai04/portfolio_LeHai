@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio của Lê Hải</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link
+    href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light px-4 fixed-top shadow-sm">
+    <div class="container">
+        <!-- Tên thương hiệu/Logo -->
+        <a
+            class="navbar-brand fw-bold fs-3"
+            href="#portfolioScene"
+            id="homeLogo"
+            aria-label="Về trang chủ"
+            >
+            Portfolio<span class="text-primary">.</span>
+        </a>
+        
+        <!-- Nút menu hamburger hiển thị trên giao diện điện thoại -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Các đường link menu -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto gap-4">
+                <li class="nav-item"><a class="nav-link" href="#aboutContent" id="aboutLink">About Me</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills-section">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#du-an">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#thanh-tich">Activities</a></li>
+                <li class="nav-item"><a class="nav-link" href="#lien-he">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+<!-- PHẦN HOME & BANNER -->
+<section class="portfolio-scene" id="portfolioScene">
+  <!-- LỚP CHỮ: hai bản giống nhau, mỗi bản chỉ hiện một nửa -->
+  <h1 class="portfolio-title" aria-label="Portfolio">
+    <span class="title-half title-top" aria-hidden="true">
+      PORTFOLIO
+    </span>
+    <span class="title-half title-bottom" aria-hidden="true">
+      PORTFOLIO
+    </span>
+  </h1>
+
+  <!-- Thông tin trên banner -->
+  <div class="banner-labels">
+    <span class="label-ba">Business Analyst</span>
+    <span class="label-code">Vibe Coding</span>
+    <span class="label-name">LÊ HẢI</span>
+    <span class="label-test">Manual Testing</span>
+  </div>
+
+  <!-- LỚP ẢNH ĐỘC LẬP: tuyệt đối không nằm trong title-half -->
+  <div class="portrait">
+    <img
+      class="portrait-hero"
+      src="chandung.png"
+      alt="Chân dung Lê Hải"
+      fetchpriority="high"
+    />
+    <img
+      class="portrait-about"
+      src="profile.png"
+      alt="Chân dung Lê Phan Minh Hải"
+      aria-hidden="true"
+    />
+  </div>
+
+  <button
+    class="enter-button"
+    type="button"
+    aria-label="Mở phần giới thiệu"
+    aria-controls="aboutContent"
+    aria-expanded="false"
+  >
+    <span aria-hidden="true">▶</span>
+  </button>
+
+  <!-- PHẦN GIỚI THIỆU -->
+  <article
+  class="about-content"
+  id="aboutContent"
+  aria-labelledby="aboutName"
+  inert
+>
+  <!-- Cột trái: ảnh morph hiện có sẽ chuyển vào khu vực này -->
+  <div class="intro-visual">
+    <div class="intro-display-title" aria-hidden="true">
+      ABOUT ME
+    </div>
+  </div>
+
+  <!-- Cột phải: thông tin -->
+  <div class="intro-information">
+    <span class="intro-page-number" aria-hidden="true">02</span>
+
+    <header class="intro-header">
+      <h2 id="aboutName" class="intro-name" tabindex="-1">
+        LÊ PHAN MINH HẢI
+      </h2>
+
+      <ul class="intro-roles" aria-label="Định hướng nghề nghiệp">
+        <li>Business Analyst</li>
+        <li>Manual Testing</li>
+        <li>Vibe Coding</li>
+        <li>System Support</li>
+      </ul>
+    </header>
+
+    <div class="intro-biography">
+      <p>
+        Cử nhân Công nghệ Thông tin (Công nghệ Phần mềm),
+        Đại học Văn Lang, GPA <strong>3.19/4.0</strong>.
+      </p>
+
+      <p>
+        Hơn 1 năm kinh nghiệm thực tế trong phân tích yêu cầu,
+        kiểm thử phần mềm, phát triển sản phẩm với sự hỗ trợ
+        của AI và hỗ trợ hệ thống.
+      </p>
+      <p>
+        Đam mê tạo ra giải pháp tối ưu, nâng cao hiệu suất
+        và mang lại giá trị thực tiễn cho người dùng.
+      </p>
+    </div>
+
+<address class="intro-contacts"> 
+      <!-- Tải CV -->
+      <a class="intro-contact intro-contact-cv" href="Le-Phan-Minh-Hai-TopCV.vn-040926.41838.pdf" download="Le-Phan-Minh-Hai-CV.pdf" target="_blank" rel="noopener noreferrer" aria-label="Tải CV của Lê Phan Minh Hải (PDF)"> 
+        <i class="fa-solid fa-file-arrow-down"></i> 
+        <span>Tải CV</span> 
+      </a>
+
+      <!-- Điện thoại -->
+      <a class="intro-contact" href="tel:0337314840"> 
+        <i class="fa-solid fa-phone"></i> 
+        <span>0337314840</span> 
+      </a> 
+ 
+      <!-- Email -->
+      <a class="intro-contact" href="mailto:lephanminhhai004@gmail.com"> 
+        <i class="fa-solid fa-envelope"></i> 
+        <span>lephanminhhai004@gmail.com</span> 
+      </a> 
+
+      <!-- GitHub -->
+      <a class="intro-contact" href="https://github.com/lehai04" target="_blank" rel="noopener noreferrer"> 
+        <i class="fa-brands fa-github"></i> 
+        <span>github.com/lehai04</span> 
+      </a> 
+</address>
+  </div>
+</article>
+</section>
+<!-- =========================================
+     SKILLS SECTION
+========================================= -->
+<section class="skills-section" id="skills-section">
+
+  <!-- Decorative elements -->
+  <div class="skills-decoration skills-decoration-left" aria-hidden="true"></div>
+  <div class="skills-decoration skills-decoration-right" aria-hidden="true"></div>
+
+  <div class="skills-container">
+
+    <!-- Header -->
+    <header class="skills-header">
+
+      <div class="skills-heading">
+
+        <h2 class="skills-title">
+          SKILLS
+        </h2>
+
+        <div class="skills-title-line" aria-hidden="true">
+          <span></span>
+          <i></i>
+        </div>
+      </div>
+
+      <div class="skills-intro">
+        <span class="skills-quote-mark">“</span>
+
+        <p>
+          Mình không ngừng học hỏi, trau dồi kỹ năng và ứng dụng
+          <strong>công nghệ</strong> để biến yêu cầu thành những
+          giải pháp rõ ràng, hiệu quả và có giá trị thực tế.
+        </p>
+
+        <span class="skills-quote-mark skills-quote-end">”</span>
+      </div>
+
+    </header>
+
+
+    <!-- Skills Grid -->
+    <div class="skills-grid">
+
+      <!-- 01 -->
+      <article class="skill-card">
+        <span class="skill-number">01</span>
+
+        <header class="skill-card-header">
+          <span class="skill-icon">
+            <i class="fa-solid fa-chart-column"></i>
+          </span>
+
+          <h3>PHÂN TÍCH &amp; QUẢN LÝ</h3>
+        </header>
+
+        <div class="skill-divider"></div>
+
+        <ul class="skill-list">
+          <li>
+            <i class="fa-regular fa-clipboard"></i>
+            <span>Business Analysis</span>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-magnifying-glass-chart"></i>
+            <span>Requirement Analysis</span>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-diagram-project"></i>
+            <span>Process Mapping · UML · BPMN</span>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-list-check"></i>
+            <span>Use Case · User Story · Acceptance Criteria</span>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-arrows-rotate"></i>
+            <span>Agile / Scrum</span>
+          </li>
+        </ul>
+
+        <i
+          class="fa-solid fa-chart-pie skill-watermark"
+          aria-hidden="true"
+        ></i>
+      </article>
+
+
+      <!-- 02 -->
+      <article class="skill-card">
+        <span class="skill-number">02</span>
+
+        <header class="skill-card-header">
+          <span class="skill-icon">
+            <i class="fa-solid fa-shield-halved"></i>
+          </span>
+
+          <h3>KIỂM THỬ PHẦN MỀM</h3>
+        </header>
+
+        <div class="skill-divider"></div>
+
+        <ul class="skill-list">
+          <li>
+            <i class="fa-solid fa-file-circle-check"></i>
+            <span>Test Case Design</span>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-circle-play"></i>
+            <span>Test Execution</span>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-bug"></i>
+            <span>Bug Tracking &amp; Reporting</span>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-check-double"></i>
+            <span>Functional Testing</span>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-rotate-left"></i>
+            <span>Regression Testing</span>
+          </li>
+        </ul>
+
+        <i
+          class="fa-regular fa-clipboard skill-watermark"
+          aria-hidden="true"
+        ></i>
+      </article>
+
+
+      <!-- 03 -->
+      <article class="skill-card">
+        <span class="skill-number">03</span>
+
+        <header class="skill-card-header">
+          <span class="skill-icon">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+          </span>
+
+          <h3>VIBE CODING &amp; AI TOOLS</h3>
+        </header>
+
+        <div class="skill-divider"></div>
+
+        <ul class="skill-list">
+          <li>
+            <i class="fa-solid fa-sparkles"></i>
+            <span>AI-assisted Development</span>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-terminal"></i>
+            <span>Prompt Engineering</span>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-code-branch"></i>
+            <span>Code Refactoring</span>
+          </li>
+
+          <li>
+            <i class="fa-brands fa-github"></i>
+            <span>Git &amp; GitHub Copilot</span>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-bolt"></i>
+            <span>Low-code / No-code Mindset</span>
+          </li>
+        </ul>
+
+        <span class="skill-watermark skill-watermark-text" aria-hidden="true">
+          AI
+        </span>
+      </article>
+
+
+      <!-- 04 -->
+      <article class="skill-card">
+        <span class="skill-number">04</span>
+
+        <header class="skill-card-header">
+          <span class="skill-icon">
+            <i class="fa-solid fa-code"></i>
+          </span>
+
+          <h3>NGÔN NGỮ LẬP TRÌNH</h3>
+        </header>
+
+        <div class="skill-divider"></div>
+
+        <ul class="skill-list">
+          <li>
+            <i class="fa-brands fa-js"></i>
+            <span>JavaScript / TypeScript</span>
+          </li>
+
+          <li>
+            <i class="fa-brands fa-html5"></i>
+            <span>HTML / CSS</span>
+          </li>
+
+          <li>
+            <i class="fa-brands fa-python"></i>
+            <span>Python</span>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-database"></i>
+            <span>SQL</span>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-code"></i>
+            <span>Golang · Cơ bản</span>
+          </li>
+        </ul>
+
+        <i
+          class="fa-solid fa-laptop-code skill-watermark"
+          aria-hidden="true"
+        ></i>
+      </article>
+
+
+      <!-- 05 -->
+      <article class="skill-card">
+        <span class="skill-number">05</span>
+
+        <header class="skill-card-header">
+          <span class="skill-icon">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+          </span>
+
+          <h3>CÔNG CỤ &amp; NỀN TẢNG</h3>
+        </header>
+
+        <div class="skill-divider"></div>
+
+        <ul class="skill-list">
+          <li>
+            <i class="fa-solid fa-code"></i>
+            <span>VS Code / Antigravity</span>
+          </li>
+
+          <li>
+            <i class="fa-brands fa-figma"></i>
+            <span>Figma</span>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-paper-plane"></i>
+            <span>Postman</span>
+          </li>
+
+          <li>
+            <i class="fa-brands fa-github"></i>
+            <span>Git / GitHub</span>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-file-excel"></i>
+            <span>Excel / Google Sheets</span>
+          </li>
+        </ul>
+
+        <i
+          class="fa-solid fa-laptop skill-watermark"
+          aria-hidden="true"
+        ></i>
+      </article>
+
+
+      <!-- 06 -->
+      <article class="skill-card">
+        <span class="skill-number">06</span>
+
+        <header class="skill-card-header">
+          <span class="skill-icon">
+            <i class="fa-solid fa-people-group"></i>
+          </span>
+
+          <h3>KỸ NĂNG MỀM</h3>
+        </header>
+
+        <div class="skill-divider"></div>
+
+        <ul class="skill-list">
+          <li>
+            <i class="fa-regular fa-comments"></i>
+            <span>Giao tiếp &amp; trình bày</span>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-people-arrows"></i>
+            <span>Làm việc nhóm</span>
+          </li>
+
+          <li>
+            <i class="fa-regular fa-clock"></i>
+            <span>Quản lý thời gian</span>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-puzzle-piece"></i>
+            <span>Giải quyết vấn đề</span>
+          </li>
+
+          <li>
+            <i class="fa-regular fa-lightbulb"></i>
+            <span>Tư duy phản biện</span>
+          </li>
+        </ul>
+
+        <i
+          class="fa-regular fa-handshake skill-watermark"
+          aria-hidden="true"
+        ></i>
+      </article>
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="skills-footer">
+
+      <div class="skills-signature">
+        <span class="skills-star">✦</span>
+
+        <div>
+          <span class="signature-script">Always</span>
+
+          <span class="signature-text">
+            LEARNING<br>
+            KEEP GROWING
+          </span>
+        </div>
+      </div>
+
+      <div class="skills-footer-line">
+        <span></span>
+        <i></i>
+      </div>
+
+    </footer>
+
+  </div>
+</section>
+
+<!-- =========================================
+     PROJECTS SECTION
+========================================= -->
+<section class="projects-section" id="du-an">
+
+  <!-- Decorative elements -->
+  <div class="projects-deco projects-deco-tl" aria-hidden="true"></div>
+  <div class="projects-deco projects-deco-br" aria-hidden="true"></div>
+
+  <div class="projects-container">
+
+    <!-- Header -->
+    <header class="projects-header">
+
+      <div class="projects-heading">
+        <h2 class="projects-title">PROJECTS</h2>
+        <div class="projects-title-line" aria-hidden="true">
+          <span></span>
+          <i></i>
+        </div>
+      </div>
+
+      <div class="projects-intro">
+        <span class="projects-quote-mark">"</span>
+        <p>
+          Các sản phẩm và đề tài thực tế với tài liệu nghiệp vụ
+          <strong>chuẩn mực</strong>, quy trình thực chiến và kết
+          quả kiểm chứng rõ ràng.
+        </p>
+        <a
+          href="https://github.com/lehai04"
+          class="projects-github-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          id="githubProfileLink"
+        >
+          <i class="fa-brands fa-github"></i>
+          Xem GitHub Repository →
+        </a>
+      </div>
+
+    </header>
+
+    <div class="project-carousel-nav" aria-label="Điều hướng dự án">
+      <div class="project-carousel-count" aria-live="polite">
+        <span id="projectCurrent">01</span><i></i><span>04</span>
+      </div>
+      <div class="project-carousel-buttons">
+        <button type="button" id="projectPrev" aria-label="Dự án trước"><i class="fa-solid fa-arrow-left"></i></button>
+        <button type="button" id="projectNext" aria-label="Dự án tiếp theo"><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+
+    <!-- Project showcase -->
+    <div class="projects-showcase" tabindex="0" aria-label="Danh sách dự án dạng trình chiếu">
+
+      <article class="project-story project-story--hero" id="projectCard01">
+        <div class="project-flip-inner">
+          <section class="project-face project-face--front" aria-label="Tổng quan dự án Tronect">
+            <div class="project-front-layout">
+              <div class="project-image-slot">
+                <!-- Ảnh dự án: Tronect.png -->
+                <img src="Tronect.png" alt="Giao diện dự án Tronect" loading="lazy" decoding="async">
+                <a class="project-zoom-btn" href="Tronect.png" target="_blank" rel="noopener noreferrer" title="Xem ảnh gốc đầy đủ">
+                  <i class="fa-solid fa-expand"></i>
+                </a>
+                <span>TRONECT / 01</span><strong>TRONECT</strong><small>Web &amp; Mobile Product</small>
+              </div>
+              <div class="project-front-copy"><div class="flip-topline"><span>01 / Case Study nổi bật</span><span>10/2025 — 03/2026</span></div><div class="flip-title"><p>TRONECT</p><h3>Nền tảng tìm kiếm nhà trọ</h3></div><p class="flip-description">Nền tảng số kết nối người thuê với chủ trọ và đơn giản hóa quá trình tìm kiếm nhà trọ.</p><dl class="flip-meta"><div><dt>Vai trò</dt><dd>Team Leader · BA · Manual QA</dd></div><div><dt>Công nghệ</dt><dd>Next.js / Golang / React Native / PostgreSQL</dd></div></dl><p class="flip-outcome">Được Trung tâm Hỗ trợ Sinh viên Đại học Văn Lang đặt hàng sử dụng.</p><button class="project-flip-open" type="button">Xem Case Study <span>→</span></button></div>
+            </div>
+          </section>
+          <section class="project-face project-face--back" aria-label="Case Study tóm tắt của Tronect">
+            <div class="flip-topline"><span>CASE STUDY / 01</span><span>TRONECT</span></div>
+            <div class="mini-case-grid"><div><small>Bài toán</small><p>Thông tin nhà trọ phân tán, khó tìm kiếm và quản lý.</p></div><div><small>Vai trò</small><p>Team Leader · BA · Manual QA<br>Requirement Analysis, User Stories, AC, User Flow, Testing và điều phối nhóm 4 thành viên.</p></div><div><small>Kết quả</small><p>Hoàn thiện nền tảng Web &amp; Mobile kết nối người thuê với chủ trọ; được Trung tâm Hỗ trợ sinh viên VLU đặt hàng sử dụng và tiếp tục phát triển.</p></div><div><small>Công nghệ</small><p>Next.js · Golang · React Native · PostgreSQL</p></div></div>
+            <div class="mini-case-links">
+              <a class="mini-case-btn" href="https://github.com/lephanminhhai004" target="_blank" rel="noopener noreferrer" aria-label="Xem mã nguồn Tronect trên GitHub">
+                <i class="fa-brands fa-github"></i>
+                <span>GitHub</span>
+                <span class="btn-arrow">↗</span>
+              </a>
+            </div>
+            <button class="project-flip-back" type="button">← Quay lại dự án</button>
+          </section>
+        </div>
+      </article>
+
+      <div class="project-pair">
+        <article class="project-story project-story--compact" id="projectCard02">
+          <div class="project-flip-inner">
+            <section class="project-face project-face--front"><div class="project-front-layout"><div class="project-image-slot"><!-- Ảnh dự án: ktx.jpg --><img src="ktx.jpg" alt="Giao diện Hệ thống Quản lý Ký túc xá" loading="lazy" decoding="async"><a class="project-zoom-btn" href="ktx.jpg" target="_blank" rel="noopener noreferrer" title="Xem ảnh gốc đầy đủ"><i class="fa-solid fa-expand"></i></a><span>KTX / 04</span><strong>QUẢN LÝ KTX</strong><small>Business Analysis · System Design</small></div><div class="project-front-copy"><div class="flip-topline"><span>04 / Dự án BA học thuật</span><span>Phân tích hệ thống</span></div><div class="flip-title"><p>KTX</p><h3>Hệ thống Quản lý Ký túc xá</h3></div><p class="flip-description">Quy trình đăng ký, xếp phòng, quản lý công nợ và cơ sở vật chất KTX được chuẩn hóa trên một hệ thống.</p><dl class="flip-meta"><div><dt>Vai trò</dt><dd>Business Analyst</dd></div><div><dt>Tài liệu</dt><dd>SRS / Function Matrix / BPMN / ERD-DFD / Test Cases</dd></div></dl><p class="flip-outcome">Cung cấp đầu vào sẵn sàng cho UI/UX và Development.</p><button class="project-flip-open" type="button">Xem Case Study <span>→</span></button></div></div></section>
+            <section class="project-face project-face--back"><div class="flip-topline"><span>CASE STUDY / 04</span><span>HỆ THỐNG QUẢN LÝ KTX</span></div><div class="mini-case-grid"><div><small>Bài toán</small><p>Quy trình đăng ký, xếp phòng, quản lý công nợ và cơ sở vật chất KTX còn phân tán, thủ công.</p></div><div><small>Vai trò</small><p>Business Analyst<br>Requirement Gathering, Function List, User Stories &amp; AC, BPMN, ERD/DFD và Business Testing.</p></div><div><small>Kết quả</small><p>Hoàn thiện bộ SRS và mô hình nghiệp vụ cho hệ thống KTX, cung cấp đầu vào sẵn sàng cho UI/UX và Development.</p></div><div><small>Tài liệu</small><p>SRS · Function Matrix · BPMN · ERD/DFD · Test Cases</p></div></div><div class="mini-case-links">
+              <a class="mini-case-btn" href="./Master_Backlog_QuanLyKTX_v3.xlsx" target="_blank" rel="noopener noreferrer" aria-label="Tải tài liệu Master Backlog Quản lý KTX">
+                <i class="fa-solid fa-file-excel"></i>
+                <span>Tài liệu (Backlog)</span>
+                <span class="btn-arrow">↗</span>
+              </a>
+            </div><button class="project-flip-back" type="button">← Quay lại dự án</button></section>
+          </div>
+        </article>
+
+        <article class="project-story project-story--compact" id="projectCard03">
+          <div class="project-flip-inner">
+            <section class="project-face project-face--front project-face--image-right"><div class="project-front-layout"><div class="project-image-slot"><!-- Ảnh dự án: rubber-plantation.jpg --><img src="rubber-plantation.jpg" alt="Giao diện Hệ thống Quản lý Vườn cây Cao su" loading="lazy" decoding="async"><a class="project-zoom-btn" href="rubber-plantation.jpg" target="_blank" rel="noopener noreferrer" title="Xem ảnh gốc đầy đủ"><i class="fa-solid fa-expand"></i></a><span>PIZITECH / 02</span><strong>VƯỜN CÂY CAO SU</strong><small>AgriTech · Plantation Management</small></div><div class="project-front-copy"><div class="flip-topline"><span>02 / Dự án thực tập</span><span>04/2025 — 07/2025</span></div><div class="flip-title"><p>CAO SU</p><h3>Hệ thống Quản lý Vườn cây Cao su</h3></div><p class="flip-description">Quy trình quản lý lô cây, sản lượng mủ, vật tư và nhân công được chuẩn hóa để theo dõi đồng bộ.</p><dl class="flip-meta"><div><dt>Vai trò</dt><dd>Business Analyst Intern</dd></div><div><dt>Lĩnh vực</dt><dd>AgriTech · Plantation Management</dd></div></dl><p class="flip-outcome">Bàn giao tài liệu nghiệp vụ, sơ đồ quy trình, cấu trúc dữ liệu và User Guide cho PiziTech.</p><button class="project-flip-open" type="button">Xem Case Study <span>→</span></button></div></div></section>
+            <section class="project-face project-face--back"><div class="flip-topline"><span>CASE STUDY / 02</span><span>PIZITECH</span></div><div class="mini-case-grid"><div><small>Bài toán</small><p>Quy trình quản lý lô cây, sản lượng mủ, vật tư và nhân công còn phân tán, khó theo dõi đồng bộ.</p></div><div><small>Vai trò</small><p>Business Analyst Intern<br>Requirement Gathering, Functional Analysis, Process Flow, Data Analysis và Documentation.</p></div><div><small>Kết quả</small><p>Hoàn thiện và bàn giao bộ tài liệu phân tích nghiệp vụ, sơ đồ quy trình, cấu trúc dữ liệu và User Guide cho PiziTech.</p></div><div><small>Lĩnh vực</small><p>AgriTech · Plantation Management</p></div></div><div class="mini-case-links">
+              <a class="mini-case-btn" href="https://github.com/lephanminhhai004" target="_blank" rel="noopener noreferrer" aria-label="Xem GitHub dự án Vườn cây Cao su">
+                <i class="fa-brands fa-github"></i>
+                <span>GitHub</span>
+                <span class="btn-arrow">↗</span>
+              </a>
+            </div><button class="project-flip-back" type="button">← Quay lại dự án</button></section>
+          </div>
+        </article>
+      </div>
+
+      <article class="project-story project-story--hero project-story--reverse" id="projectCard04">
+        <div class="project-flip-inner">
+          <section class="project-face project-face--front project-face--image-right"><div class="project-front-layout"><div class="project-image-slot"><!-- Ảnh dự án: VGG.png --><img src="VGG.png" alt="Giao diện Website Viện Sau Đại học" loading="lazy" decoding="async"><a class="project-zoom-btn" href="VGG.png" target="_blank" rel="noopener noreferrer" title="Xem ảnh gốc đầy đủ"><i class="fa-solid fa-expand"></i></a><span>VGG / 03</span><strong>VGG WEBSITE</strong><small>Responsive Web · CMS</small></div><div class="project-front-copy"><div class="flip-topline"><span>03 / Case Study nổi bật</span><span>08/2026 — Nay</span></div><div class="flip-title"><p>VGG</p><h3>Website Viện Sau Đại học</h3></div><p class="flip-description">Nội dung chương trình sau đại học được tổ chức rõ ràng, dễ tra cứu và responsive trên nhiều thiết bị.</p><dl class="flip-meta"><div><dt>Vai trò</dt><dd>BA · AI-Assisted Development · UI/UX · Testing</dd></div><div><dt>Công nghệ</dt><dd>Next.js / React / PostgreSQL</dd></div></dl><p class="flip-outcome">Hoàn thiện khoảng 90% chức năng cơ bản và triển khai demo public.</p><button class="project-flip-open" type="button">Xem Case Study <span>→</span></button></div></div></section>
+          <section class="project-face project-face--back"><div class="flip-topline"><span>CASE STUDY / 03</span><span>VGG WEBSITE</span></div><div class="mini-case-grid"><div><small>Bài toán</small><p>Nội dung chương trình sau đại học cần được tổ chức rõ ràng, dễ tra cứu và responsive trên nhiều thiết bị.</p></div><div><small>Vai trò</small><p>BA · AI-Assisted Development · UI/UX · Testing<br>Phân tích yêu cầu, xây IA, thiết kế giao diện, phát triển Next.js và kiểm thử responsive.</p></div><div><small>Kết quả</small><p>Hoàn thiện khoảng 90% chức năng cơ bản, triển khai demo public và cung cấp trải nghiệm tiếp cận thông tin học thuật hiện đại.</p></div><div><small>Công nghệ</small><p>Next.js · React · PostgreSQL</p></div></div><div class="mini-case-links">
+            <a class="mini-case-btn" href="https://github.com/lehai04/VGG" target="_blank" rel="noopener noreferrer" aria-label="Xem mã nguồn VGG trên GitHub">
+              <i class="fa-brands fa-github"></i>
+              <span>GitHub</span>
+              <span class="btn-arrow">↗</span>
+            </a>
+            <a class="mini-case-btn mini-case-btn--demo" href="https://saudaihoc.vlu.edu.vn/" target="_blank" rel="noopener noreferrer" aria-label="Truy cập Demo Website Viện Sau Đại học">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              <span>Demo</span>
+              <span class="btn-arrow">↗</span>
+            </a>
+          </div><button class="project-flip-back" type="button">← Quay lại dự án</button></section>
+        </div>
+      </article>
+
+    </div>
+
+    <section class="case-studies" aria-labelledby="caseStudiesTitle" aria-hidden="true" aria-modal="true" role="dialog">
+      <button class="case-modal-close" type="button" aria-label="Đóng case study">
+        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+      </button>
+      <header class="case-studies-header">
+        <span>Selected process</span>
+        <h3 id="caseStudiesTitle">CASE STUDIES</h3>
+        <p>Bối cảnh, cách tiếp cận và đầu ra chính của từng dự án.</p>
+      </header>
+
+      <div class="case-study-list">
+        <article class="case-study" id="case-tronect">
+          <header class="case-hero">
+            <div><p class="case-study-label">01 / Case Study nổi bật · 10.2025 — 03.2026</p><h4>Tronect — Hệ thống tìm kiếm &amp; quản lý nhà trọ</h4><p>Hệ thống kết nối người thuê với chủ trọ, hỗ trợ tìm kiếm, đăng tin và quản lý thông tin phòng trên Web và Mobile.</p></div>
+            <dl class="case-meta"><div><dt>Vai trò</dt><dd>Team Leader · BA · Manual QA</dd></div><div><dt>Nền tảng</dt><dd>Web App · Mobile App</dd></div><div><dt>Công nghệ</dt><dd>Next.js · Golang · React Native · PostgreSQL</dd></div><div><dt>Công cụ</dt><dd>Excel · Word · Draw.io</dd></div></dl>
+          </header>
+          <div class="case-section"><span>01 / Bài toán</span><h5>Bối cảnh &amp; bài toán</h5><p>Thông tin nhà trọ phân tán, khó tìm kiếm và quản lý.</p></div>
+          <div class="case-section"><span>02 / Vai trò</span><h5>Vai trò &amp; trách nhiệm</h5><div class="case-points"><p><b>Team Leader · BA · Manual QA</b>Tham gia xuyên suốt quá trình phân tích, kiểm thử và điều phối dự án.</p><p><b>Requirement &amp; Flow</b>Requirement Analysis, User Stories, Acceptance Criteria và User Flow.</p><p><b>Testing &amp; điều phối</b>Thực hiện Manual Testing và điều phối nhóm 4 thành viên.</p></div></div>
+          <div class="case-section"><span>03 / Quy trình</span><h5>Quy trình thực hiện</h5><ol class="case-process"><li><b>Khám phá</b><small>Làm rõ nhu cầu</small></li><li><b>Xác định</b><small>Chốt chức năng</small></li><li><b>Thiết kế</b><small>Luồng &amp; dữ liệu</small></li><li><b>Xây dựng</b><small>Web &amp; Mobile</small></li><li><b>Kiểm thử</b><small>Kiểm thử</small></li></ol></div>
+          <div class="case-section case-section--split"><div><span>04 / Tài liệu</span><h5>Tài liệu bàn giao</h5><ul><li>SRS &amp; Function Matrix</li><li>User Stories, AC, User Flow &amp; ERD</li><li>Functional/UI Test Cases &amp; Bug Log</li></ul></div><div><span>05 / Kết quả</span><h5>Kết quả</h5><p>Hoàn thiện nền tảng Web &amp; Mobile kết nối người thuê với chủ trọ; được Trung tâm Hỗ trợ sinh viên VLU đặt hàng sử dụng và tiếp tục phát triển.</p></div></div>
+        </article>
+
+        <article class="case-study" id="case-rubber">
+          <header class="case-hero"><div><p class="case-study-label">02 / Case Study thực tập · 04.2025 — 07.2025</p><h4>Hệ thống Quản lý Vườn cây Cao su</h4><p>Chuẩn hóa nghiệp vụ quản lý lô cây, sản lượng mủ, vật tư và nhân công tại PiziTech.</p></div><dl class="case-meta"><div><dt>Vai trò</dt><dd>Business Analyst Intern</dd></div><div><dt>Lĩnh vực</dt><dd>AgriTech · Plantation Management</dd></div><div><dt>Đơn vị</dt><dd>PiziTech</dd></div><div><dt>Trạng thái</dt><dd>Hoàn thành &amp; bàn giao</dd></div></dl></header>
+          <div class="case-section"><span>01 / Bài toán</span><h5>Bối cảnh &amp; bài toán</h5><p>Quy trình quản lý lô cây, sản lượng mủ, vật tư và nhân công còn phân tán, khó theo dõi đồng bộ.</p></div>
+          <div class="case-section"><span>02 / Vai trò</span><h5>Vai trò &amp; trách nhiệm</h5><div class="case-points"><p><b>Business Analyst Intern</b>Tham gia phân tích nghiệp vụ và chuẩn hóa yêu cầu hệ thống.</p><p><b>Requirement &amp; Analysis</b>Requirement Gathering, Functional Analysis và Data Analysis.</p><p><b>Quy trình &amp; tài liệu</b>Xây dựng Process Flow và hoàn thiện bộ tài liệu bàn giao.</p></div></div>
+          <div class="case-section"><span>03 / Quy trình</span><h5>Quy trình thực hiện</h5><ol class="case-process"><li><b>Khảo sát</b><small>Tìm hiểu nghiệp vụ</small></li><li><b>Mô hình hóa</b><small>Vẽ quy trình</small></li><li><b>Đặc tả</b><small>Mô tả dữ liệu</small></li><li><b>Rà soát</b><small>Rà soát yêu cầu</small></li><li><b>Bàn giao</b><small>Bàn giao tài liệu</small></li></ol></div>
+          <div class="case-section case-section--split"><div><span>04 / Tài liệu</span><h5>Tài liệu bàn giao</h5><ul><li>Tài liệu phân tích nghiệp vụ</li><li>Process Flow &amp; Data Structure</li><li>User Guide</li></ul></div><div><span>05 / Kết quả</span><h5>Kết quả</h5><p>Hoàn thiện và bàn giao bộ tài liệu phân tích nghiệp vụ, sơ đồ quy trình, cấu trúc dữ liệu và User Guide cho PiziTech.</p></div></div>
+        </article>
+
+        <article class="case-study" id="case-graduate">
+          <header class="case-hero"><div><p class="case-study-label">03 / Nền tảng Web · 08.2026 — Nay</p><h4>VGG — Website Viện Sau Đại học</h4><p>Nội dung chương trình sau đại học được tổ chức rõ ràng, dễ tra cứu và responsive trên nhiều thiết bị.</p></div><dl class="case-meta"><div><dt>Vai trò</dt><dd>BA · AI-Assisted Development · UI/UX · Testing</dd></div><div><dt>Nền tảng</dt><dd>Responsive Web</dd></div><div><dt>Công nghệ</dt><dd>Next.js · React · PostgreSQL</dd></div><div><dt>Tiến độ</dt><dd>90% · Demo công khai</dd></div></dl></header>
+          <div class="case-section"><span>01 / Bài toán</span><h5>Bối cảnh &amp; bài toán</h5><p>Nội dung chương trình sau đại học cần được tổ chức rõ ràng, dễ tra cứu và responsive trên nhiều thiết bị.</p></div>
+          <div class="case-section"><span>02 / Vai trò</span><h5>Vai trò &amp; trách nhiệm</h5><div class="case-points"><p><b>BA · Information Architecture</b>Phân tích yêu cầu và xây dựng IA cho nội dung học thuật.</p><p><b>UI/UX · Development</b>Thiết kế giao diện và phát triển website bằng Next.js.</p><p><b>Testing</b>Kiểm thử chức năng và responsive trên nhiều thiết bị.</p></div></div>
+          <div class="case-section"><span>03 / Quy trình</span><h5>Quy trình thực hiện</h5><ol class="case-process"><li><b>Rà soát</b><small>Rà soát nội dung</small></li><li><b>Cấu trúc</b><small>Thiết kế IA</small></li><li><b>Prototype</b><small>Tạo giao diện</small></li><li><b>Phát triển</b><small>Xây module</small></li><li><b>QA</b><small>Kiểm thử</small></li></ol></div>
+          <div class="case-section case-section--split"><div><span>04 / Kết quả</span><h5>Kết quả</h5><p>Hoàn thiện khoảng 90% chức năng cơ bản, triển khai demo public và cung cấp trải nghiệm tiếp cận thông tin học thuật hiện đại.</p></div><div><span>05 / Liên kết</span><h5>Tham khảo</h5><ul><li><a href="https://github.com/lehai04/VGG" target="_blank" rel="noopener noreferrer">Kho mã GitHub ↗</a></li><li><a href="https://saudaihoc.vlu.edu.vn/" target="_blank" rel="noopener noreferrer">Demo công khai ↗</a></li></ul></div></div>
+        </article>
+
+        <article class="case-study" id="case-ktx">
+          <header class="case-hero"><div><p class="case-study-label">04 / Case Study BA học thuật</p><h4>Hệ thống Quản lý Ký túc xá Sinh viên</h4><p>Chuẩn hóa quy trình đăng ký, xếp phòng, quản lý công nợ và cơ sở vật chất trên một hệ thống tập trung.</p></div><dl class="case-meta"><div><dt>Vai trò</dt><dd>Business Analyst</dd></div><div><dt>Phạm vi</dt><dd>Phân tích &amp; thiết kế hệ thống</dd></div><div><dt>Tài liệu</dt><dd>SRS · Function Matrix · BPMN · ERD/DFD · Test Cases</dd></div><div><dt>Trạng thái</dt><dd>Sẵn sàng cho UI/UX &amp; Development</dd></div></dl></header>
+          <div class="case-section"><span>01 / Bài toán</span><h5>Bối cảnh &amp; bài toán</h5><p>Quy trình đăng ký, xếp phòng, quản lý công nợ và cơ sở vật chất KTX còn phân tán, thủ công.</p></div>
+          <div class="case-section"><span>02 / Vai trò</span><h5>Vai trò &amp; trách nhiệm</h5><div class="case-points"><p><b>Requirement &amp; Function</b>Requirement Gathering và xây dựng Function List.</p><p><b>User Stories &amp; mô hình</b>User Stories, Acceptance Criteria, BPMN và ERD/DFD.</p><p><b>Business Testing</b>Kiểm tra nghiệp vụ và tính nhất quán của đặc tả.</p></div></div>
+          <div class="case-section"><span>03 / Quy trình</span><h5>Quy trình thực hiện</h5><ol class="case-process"><li><b>Phạm vi</b><small>Chốt phạm vi</small></li><li><b>Mô hình</b><small>Vẽ quy trình</small></li><li><b>Đặc tả</b><small>Viết yêu cầu</small></li><li><b>Ưu tiên</b><small>Xếp backlog</small></li><li><b>Xác thực</b><small>Kiểm tra AC</small></li></ol></div>
+          <div class="case-section case-section--split"><div><span>04 / Kết quả</span><h5>Kết quả</h5><p>Hoàn thiện bộ SRS và mô hình nghiệp vụ cho hệ thống KTX, cung cấp đầu vào sẵn sàng cho UI/UX và Development.</p></div><div><span>05 / Tài liệu</span><h5>Tài liệu bàn giao</h5><ul><li>SRS · Function Matrix · BPMN</li><li>ERD/DFD · Test Cases</li><li><a href="https://github.com/lehai04/portfolio/blob/main/Master_Backlog_QuanLyKTX_v3_ToiUu.xlsx" target="_blank" rel="noopener noreferrer">Xem Master Backlog trên GitHub ↗</a></li></ul></div></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="projects-footer">
+      <div class="projects-signature">
+        <span class="projects-star">✦</span>
+        <div>
+          <span class="signature-script">Always</span>
+          <span class="signature-text">
+            BUILDING<br>
+            KEEP SHIPPING
+          </span>
+        </div>
+      </div>
+      <div class="projects-footer-line">
+        <span></span>
+        <i></i>
+      </div>
+    </footer>
+
+  </div>
+</section>
+
+
+<!-- =========================================
+     ACTIVITIES & ACHIEVEMENTS SECTION
+========================================= -->
+<section class="highlights-section" id="thanh-tich">
+  <div class="highlights-decoration" aria-hidden="true"></div>
+
+  <div class="highlights-container">
+    <header class="highlights-header">
+      <div class="highlights-heading">
+        <span class="highlights-kicker">05 / HÀNH TRÌNH PHÁT TRIỂN</span>
+        <h2 class="highlights-title">ACTIVITIES &amp; ACHIEVEMENTS</h2>
+        <div class="highlights-title-line" aria-hidden="true"><span></span><i></i></div>
+      </div>
+      <p class="highlights-intro">Những dấu mốc về hoạt động sinh viên, thành tích học tập và quá trình phát triển năng lực chuyên môn.</p>
+    </header>
+
+    <div class="highlights-grid">
+      <article class="highlight-panel highlight-panel--activities">
+        <header class="highlight-panel-header">
+          <span>01 / HOẠT ĐỘNG</span>
+          <h3>Hoạt động sinh viên</h3>
+        </header>
+
+        <div class="activity-timeline">
+          <div class="activity-item">
+            <time datetime="2023">2023 — 2024</time>
+            <div><h4>Liên Chi Hội Phó</h4><p>Liên Chi Hội Khoa Công nghệ Thông tin, Trường Đại học Văn Lang.</p></div>
+          </div>
+          <div class="activity-item">
+            <time datetime="2022">2022 — 2025</time>
+            <div><h4>Ủy viên BCH Hội Sinh viên Trường</h4><p>Tham gia tổ chức và hỗ trợ các hoạt động của Hội Sinh viên Trường Đại học Văn Lang.</p></div>
+          </div>
+          <div class="activity-item">
+            <time>Hoạt động thường niên</time>
+            <div><h4>Đoàn — Hội Khoa Công nghệ Thông tin</h4><p>Tham gia hỗ trợ các chương trình và hoạt động thường niên của khoa.</p></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="highlight-panel highlight-panel--achievements">
+        <header class="highlight-panel-header">
+          <span>02 / THÀNH TÍCH</span>
+          <h3>Dấu mốc nổi bật</h3>
+        </header>
+
+        <ul class="achievement-list">
+          <li><time>2022 — 2024</time><div><h4>Học bổng thành tích học tập</h4><p>Học bổng dành cho sinh viên có thành tích tốt trong học tập.</p></div><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></li>
+          <li><time>2022 — 2024</time><div><h4>Sinh viên 5 Tốt</h4><p>Đạt danh hiệu Sinh viên 5 Tốt cấp Trường và cấp Khoa.</p></div><i class="fa-solid fa-star" aria-hidden="true"></i></li>
+          <li><time>2023 — 2024</time><div><h4>Sinh viên tiêu biểu 2024</h4><p>Được tuyên dương và tham gia học tập tại Đền Hùng, Phú Thọ.</p></div><i class="fa-solid fa-award" aria-hidden="true"></i></li>
+          <li><time>2025 — 2026</time><div><h4>Đề tài NCKH cấp Trường</h4><p>Tham gia thực hiện đề tài nghiên cứu khoa học cấp Trường.</p></div><i class="fa-solid fa-flask" aria-hidden="true"></i></li>
+          <li><time>2026</time><div><h4>Cuộc thi Khởi nghiệp Ra Khơi</h4><p>Tham gia cuộc thi Khởi nghiệp Ra Khơi 2026.</p></div><i class="fa-solid fa-rocket" aria-hidden="true"></i></li>
+        </ul>
+      </article>
+    </div>
+
+    <aside class="certificates-strip" aria-labelledby="certificatesTitle">
+      <div class="certificates-heading">
+        <span>03 / CHỨNG CHỈ</span>
+        <h3 id="certificatesTitle">Năng lực được ghi nhận</h3>
+      </div>
+      <div class="certificate-list">
+        <div class="certificate-item"><i class="fa-solid fa-certificate" aria-hidden="true"></i><div><time>2024 — 2025</time><strong>TMA Solutions</strong></div></div>
+        <div class="certificate-item"><i class="fa-solid fa-file-word" aria-hidden="true"></i><div><time>2023 — 2024</time><strong>MOS Word</strong></div></div>
+        <div class="certificate-item"><i class="fa-solid fa-language" aria-hidden="true"></i><div><time>2026</time><strong>Aptis B2</strong></div></div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- =========================================
+     TECH STACK HORIZONTAL MARQUEE SECTION
+========================================= -->
+<section class="tech-marquee-section" id="tech-stack" aria-label="Công nghệ và công cụ sử dụng">
+  <!-- Auto-scrolling infinite marquee -->
+  <div class="tech-marquee">
+    <div class="tech-marquee-track">
+      <!-- Group 1 -->
+      <div class="tech-marquee-group">
+        <!-- Item 01: Next.js -->
+        <div class="tech-marquee-item">
+          <span class="tech-item-icon" style="color: #000000;">
+            <svg class="tech-icon-svg" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 6.63 5.37 12 12 12s12-5.37 12-12c0-6.63-5.37-12-12-12zm-1.02 17.5V6.5h2.04v7.46l5.77-7.46H20.4l-7.38 9.54V17.5h-2.04z"/>
+            </svg>
+          </span>
+          <span class="tech-item-name">Next.js</span>
+        </div>
+
+        <!-- Item 02: React -->
+        <div class="tech-marquee-item">
+          <span class="tech-item-icon" style="color: #087ea4;">
+            <i class="fa-brands fa-react" aria-hidden="true"></i>
+          </span>
+          <span class="tech-item-name">React</span>
+        </div>
+
+        <!-- Item 03: TypeScript -->
+        <div class="tech-marquee-item">
+          <span class="tech-item-icon">
+            <svg class="tech-icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+              <rect width="24" height="24" rx="3.5" fill="#3178c6"/>
+              <path d="M14.5 10.2h5.6v1.8h-1.9v7h-1.8v-7h-1.9v-1.8zm-9.3 1.9h4.5c.3 0 .5.1.7.2.2.1.3.3.4.5.1.2.2.4.2.6 0 .3-.1.5-.2.7-.1.2-.3.4-.6.5-.3.1-.7.3-1.2.4-.4.1-.7.2-1 .3-.3.1-.5.3-.6.5-.1.2-.2.4-.2.6 0 .2.1.4.2.5.1.1.2.2.4.3.2.1.4.1.6.1.3 0 .6-.1.9-.2.3-.1.5-.4.6-.7l1.6 1c-.3.6-.8 1-1.4 1.3-.6.3-1.4.5-2.3.5-.7 0-1.4-.1-1.9-.4-.5-.3-.9-.6-1.2-1.1-.3-.4-.4-.9-.4-1.5 0-.6.2-1.2.5-1.6.3-.4.8-.8 1.4-1 .4-.2.9-.3 1.4-.4.5-.1 1-.2 1.3-.4.2-.1.3-.2.4-.3.1-.1.1-.2.1-.4 0-.2-.1-.4-.3-.5-.2-.1-.5-.2-.8-.2-.3 0-.6.1-.8.2-.2.1-.4.3-.6.5L5.2 12.1z" fill="#ffffff"/>
+            </svg>
+          </span>
+          <span class="tech-item-name">TypeScript</span>
+        </div>
+
+        <!-- Item 04: JavaScript -->
+        <div class="tech-marquee-item">
+          <span class="tech-item-icon">
+            <svg class="tech-icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+              <rect width="24" height="24" rx="3.5" fill="#f7df1e"/>
+              <path d="M6.5 16.5l1.6-1c.3.5.6.8 1 .8.4 0 .7-.2.7-.6V9h1.9v6.8c0 .8-.3 1.4-.8 1.8-.5.4-1.2.6-2 .6-.9 0-1.7-.4-2.4-1.7zm6.7-.4l1.6-1c.4.6.9 1 1.6 1 .7 0 1.1-.3 1.1-.7 0-.4-.3-.6-1-.9l-.7-.3c-1.3-.5-2-1.3-2-2.3 0-.8.3-1.4.9-1.9.6-.5 1.4-.7 2.4-.7 1 0 1.8.3 2.4 1l-1.5 1.1c-.3-.4-.7-.6-1.2-.6-.4 0-.7.2-.7.5 0 .3.2.5.8.7l.7.3c1.5.6 2.2 1.4 2.2 2.5 0 .8-.3 1.5-.9 2-.6.5-1.5.8-2.6.8-1.5 0-2.6-.6-3.1-1.5z" fill="#000000"/>
+            </svg>
+          </span>
+          <span class="tech-item-name">JavaScript</span>
+        </div>
+
+        <!-- Item 05: React Native -->
+        <div class="tech-marquee-item">
+          <span class="tech-item-icon" style="color: #087ea4;">
+            <i class="fa-solid fa-mobile-screen" aria-hidden="true"></i>
+          </span>
+          <span class="tech-item-name">React Native</span>
+        </div>
+
+        <!-- Item 06: Golang -->
+        <div class="tech-marquee-item">
+          <span class="tech-item-icon" style="color: #00add8;">
+            <i class="fa-brands fa-golang" aria-hidden="true"></i>
+          </span>
+          <span class="tech-item-name">Golang</span>
+        </div>
+
+        <!-- Item 07: Python -->
+        <div class="tech-marquee-item">
+          <span class="tech-item-icon">
+            <svg class="tech-icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M11.9 1c-4.4 0-4.1 1.9-4.1 1.9l.01 2h4.2v.6H6.1S3 5.1 3 9.6s2.7 4.3 2.7 4.3h1.6v-2.3s-.1-2.7 2.7-2.7h4.6s2.6.04 2.6-2.5V3.8S17.4 1 11.9 1zm-2.3 1.4a.8.8 0 1 1 0 1.6.8.8 0 0 1 0-1.6z" fill="#3776ab"/>
+              <path d="M12.1 23c4.4 0 4.1-1.9 4.1-1.9l-.01-2h-4.2v-.6h5.9s3.1.4 3.1-4.1-2.7-4.3-2.7-4.3h-1.6v2.3s.1 2.7-2.7 2.7H9.4S6.8 15 6.8 17.5v2.6S6.6 23 12.1 23zm2.3-1.4a.8.8 0 1 1 0-1.6.8.8 0 0 1 0 1.6z" fill="#ffd43b"/>
+            </svg>
+          </span>
+          <span class="tech-item-name">Python</span>
+        </div>
+
+        <!-- Item 08: PostgreSQL -->
+        <div class="tech-marquee-item">
+          <span class="tech-item-icon" style="color: #336791;">
+            <svg class="tech-icon-svg" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+              <path d="M12.012 0C5.38 0 .023 5.356.023 11.988c0 5.304 3.44 9.8 8.212 11.393-.11-.958-.209-2.43.044-3.475.228-.946 1.472-6.242 1.472-6.242s-.376-.75-.376-1.859c0-1.741 1.01-3.041 2.268-3.041 1.07 0 1.586.803 1.586 1.766 0 1.076-.685 2.684-1.038 4.175-.295 1.25.627 2.269 1.858 2.269 2.23 0 3.945-2.352 3.945-5.746 0-3.004-2.158-5.105-5.242-5.105-3.82 0-6.062 2.865-6.062 5.82 0 1.154.444 2.392.998 3.064a.4.4 0 0 1 .092.383c-.102.427-.33 1.342-.375 1.53-.058.24-.193.29-.446.175-1.666-.776-2.707-3.21-2.707-5.166 0-4.207 3.056-8.07 8.814-8.07 4.628 0 8.224 3.298 8.224 7.705 0 4.598-2.898 8.298-6.92 8.298-1.351 0-2.622-.702-3.057-1.531l-.832 3.17c-.301 1.157-1.115 2.607-1.661 3.5 1.246.384 2.57.592 3.945.592 6.633 0 11.988-5.355 11.988-11.988C24 5.356 18.645 0 12.012 0z"/>
+            </svg>
+          </span>
+          <span class="tech-item-name">PostgreSQL</span>
+        </div>
+
+        <!-- Item 09: SQL -->
+        <div class="tech-marquee-item">
+          <span class="tech-item-icon" style="color: #00758f;">
+            <i class="fa-solid fa-database" aria-hidden="true"></i>
+          </span>
+          <span class="tech-item-name">SQL</span>
+        </div>
+
+        <!-- Item 10: HTML5 -->
+        <div class="tech-marquee-item">
+          <span class="tech-item-icon" style="color: #e34f26;">
+            <i class="fa-brands fa-html5" aria-hidden="true"></i>
+          </span>
+          <span class="tech-item-name">HTML5</span>
+        </div>
+
+        <!-- Item 11: CSS3 -->
+        <div class="tech-marquee-item">
+          <span class="tech-item-icon" style="color: #1572b6;">
+            <i class="fa-brands fa-css3-alt" aria-hidden="true"></i>
+          </span>
+          <span class="tech-item-name">CSS3</span>
+        </div>
+
+        <!-- Item 12: Figma -->
+        <div class="tech-marquee-item">
+          <span class="tech-item-icon">
+            <svg class="tech-icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M8 24c2.2 0 4-1.8 4-4v-4H8c-2.2 0-4 1.8-4 4s1.8 4 4 4z" fill="#0acf83"/>
+              <path d="M4 12c0-2.2 1.8-4 4-4h4v8H8c-2.2 0-4-1.8-4-4z" fill="#a259ff"/>
+              <path d="M4 4c0-2.2 1.8-4 4-4h4v8H8C5.8 8 4 6.2 4 4z" fill="#f24e1e"/>
+              <path d="M12 0h4c2.2 0 4 1.8 4 4s-1.8 4-4 4h-4V0z" fill="#ff7262"/>
+              <path d="M20 12c0 2.2-1.8 4-4 4s-4-1.8-4-4 1.8-4 4-4 4 1.8 4 4z" fill="#1abcfe"/>
+            </svg>
+          </span>
+          <span class="tech-item-name">Figma</span>
+        </div>
+
+        <!-- Item 13: Git -->
+        <div class="tech-marquee-item">
+          <span class="tech-item-icon" style="color: #f05032;">
+            <i class="fa-brands fa-git-alt" aria-hidden="true"></i>
+          </span>
+          <span class="tech-item-name">Git</span>
+        </div>
+
+        <!-- Item 14: GitHub -->
+        <div class="tech-marquee-item">
+          <span class="tech-item-icon" style="color: #24292e;">
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
+          </span>
+          <span class="tech-item-name">GitHub</span>
+        </div>
+
+        <!-- Item 15: Postman -->
+        <div class="tech-marquee-item">
+          <span class="tech-item-icon" style="color: #ff6c37;">
+            <svg class="tech-icon-svg" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+              <path d="M13.597 0C6.087 0 0 6.087 0 13.597c0 2.81 0.852 5.424 2.316 7.596L.085 23.473a.627.627 0 0 0 .783.783l2.28-2.23A13.518 13.518 0 0 0 13.597 27.2c7.51 0 13.598-6.087 13.598-13.603C27.195 6.087 21.107 0 13.597 0zm6.918 8.87a6.833 6.833 0 0 1 1.794 4.673c0 3.782-3.078 6.86-6.86 6.86a6.832 6.832 0 0 1-4.71-1.83l2.846-2.846a2.83 2.83 0 0 0 1.864.7c1.572 0 2.852-1.28 2.852-2.852 0-.69-.25-1.32-.663-1.815l2.877-2.89z"/>
+            </svg>
+          </span>
+          <span class="tech-item-name">Postman</span>
+        </div>
+
+        <!-- Item 16: Excel -->
+        <div class="tech-marquee-item">
+          <span class="tech-item-icon" style="color: #217346;">
+            <i class="fa-solid fa-file-excel" aria-hidden="true"></i>
+          </span>
+          <span class="tech-item-name">Excel</span>
+        </div>
+
+        <!-- Item 17: Draw.io -->
+        <div class="tech-marquee-item">
+          <span class="tech-item-icon" style="color: #f08705;">
+            <i class="fa-solid fa-diagram-project" aria-hidden="true"></i>
+          </span>
+          <span class="tech-item-name">Draw.io</span>
+        </div>
+
+        <!-- Item 18: Trello -->
+        <div class="tech-marquee-item">
+          <span class="tech-item-icon" style="color: #0079bf;">
+            <i class="fa-brands fa-trello" aria-hidden="true"></i>
+          </span>
+          <span class="tech-item-name">Trello</span>
+        </div>
+
+        <!-- Item 19: VS Code -->
+        <div class="tech-marquee-item">
+          <span class="tech-item-icon" style="color: #007acc;">
+            <svg class="tech-icon-svg" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+              <path d="M23.15 2.587L18.21.21a1.494 1.494 0 0 0-1.705.29l-9.46 8.63-4.12-3.128a.999.999 0 0 0-1.276.057L.327 7.276A1 1 0 0 0 .32 8.652L4.634 12 .32 15.348a1 1 0 0 0 .007 1.376l1.322 1.217a1 1 0 0 0 1.276.057l4.12-3.128 9.46 8.63a1.492 1.492 0 0 0 1.704.29l4.942-2.377A1.5 1.5 0 0 0 24 20.06V3.939a1.5 1.5 0 0 0-.85-1.352zm-5.146 14.861L10.826 12l7.178-5.448v10.896z"/>
+            </svg>
+          </span>
+          <span class="tech-item-name">VS Code</span>
+        </div>
+
+        <!-- Item 20: Bootstrap -->
+        <div class="tech-marquee-item">
+          <span class="tech-item-icon" style="color: #7952b3;">
+            <i class="fa-brands fa-bootstrap" aria-hidden="true"></i>
+          </span>
+          <span class="tech-item-name">Bootstrap</span>
+        </div>
+      </div>
+
+      <!-- Group 2 (Duplicate for seamless infinite ticker) -->
+      <div class="tech-marquee-group" aria-hidden="true">
+        <!-- Item 01: Next.js -->
+        <div class="tech-marquee-item">
+          <span class="tech-item-icon" style="color: #000000;">
+            <svg class="tech-icon-svg" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 6.63 5.37 12 12 12s12-5.37 12-12c0-6.63-5.37-12-12-12zm-1.02 17.5V6.5h2.04v7.46l5.77-7.46H20.4l-7.38 9.54V17.5h-2.04z"/>
+            </svg>
+          </span>
+          <span class="tech-item-name">Next.js</span>
+        </div>
+
+        <!-- Item 02: React -->
+        <div class="tech-marquee-item">
+          <span class="tech-item-icon" style="color: #087ea4;">
+            <i class="fa-brands fa-react" aria-hidden="true"></i>
+          </span>
+          <span class="tech-item-name">React</span>
+        </div>
+
+        <!-- Item 03: TypeScript -->
+        <div class="tech-marquee-item">
+          <span class="tech-item-icon">
+            <svg class="tech-icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+              <rect width="24" height="24" rx="3.5" fill="#3178c6"/>
+              <path d="M14.5 10.2h5.6v1.8h-1.9v7h-1.8v-7h-1.9v-1.8zm-9.3 1.9h4.5c.3 0 .5.1.7.2.2.1.3.3.4.5.1.2.2.4.2.6 0 .3-.1.5-.2.7-.1.2-.3.4-.6.5-.3.1-.7.3-1.2.4-.4.1-.7.2-1 .3-.3.1-.5.3-.6.5-.1.2-.2.4-.2.6 0 .2.1.4.2.5.1.1.2.2.4.3.2.1.4.1.6.1.3 0 .6-.1.9-.2.3-.1.5-.4.6-.7l1.6 1c-.3.6-.8 1-1.4 1.3-.6.3-1.4.5-2.3.5-.7 0-1.4-.1-1.9-.4-.5-.3-.9-.6-1.2-1.1-.3-.4-.4-.9-.4-1.5 0-.6.2-1.2.5-1.6.3-.4.8-.8 1.4-1 .4-.2.9-.3 1.4-.4.5-.1 1-.2 1.3-.4.2-.1.3-.2.4-.3.1-.1.1-.2.1-.4 0-.2-.1-.4-.3-.5-.2-.1-.5-.2-.8-.2-.3 0-.6.1-.8.2-.2.1-.4.3-.6.5L5.2 12.1z" fill="#ffffff"/>
+            </svg>
+          </span>
+          <span class="tech-item-name">TypeScript</span>
+        </div>
+
+        <!-- Item 04: JavaScript -->
+        <div class="tech-marquee-item">
+          <span class="tech-item-icon">
+            <svg class="tech-icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+              <rect width="24" height="24" rx="3.5" fill="#f7df1e"/>
+              <path d="M6.5 16.5l1.6-1c.3.5.6.8 1 .8.4 0 .7-.2.7-.6V9h1.9v6.8c0 .8-.3 1.4-.8 1.8-.5.4-1.2.6-2 .6-.9 0-1.7-.4-2.4-1.7zm6.7-.4l1.6-1c.4.6.9 1 1.6 1 .7 0 1.1-.3 1.1-.7 0-.4-.3-.6-1-.9l-.7-.3c-1.3-.5-2-1.3-2-2.3 0-.8.3-1.4.9-1.9.6-.5 1.4-.7 2.4-.7 1 0 1.8.3 2.4 1l-1.5 1.1c-.3-.4-.7-.6-1.2-.6-.4 0-.7.2-.7.5 0 .3.2.5.8.7l.7.3c1.5.6 2.2 1.4 2.2 2.5 0 .8-.3 1.5-.9 2-.6.5-1.5.8-2.6.8-1.5 0-2.6-.6-3.1-1.5z" fill="#000000"/>
+            </svg>
+          </span>
+          <span class="tech-item-name">JavaScript</span>
+        </div>
+
+        <!-- Item 05: React Native -->
+        <div class="tech-marquee-item">
+          <span class="tech-item-icon" style="color: #087ea4;">
+            <i class="fa-solid fa-mobile-screen" aria-hidden="true"></i>
+          </span>
+          <span class="tech-item-name">React Native</span>
+        </div>
+
+        <!-- Item 06: Golang -->
+        <div class="tech-marquee-item">
+          <span class="tech-item-icon" style="color: #00add8;">
+            <i class="fa-brands fa-golang" aria-hidden="true"></i>
+          </span>
+          <span class="tech-item-name">Golang</span>
+        </div>
+
+        <!-- Item 07: Python -->
+        <div class="tech-marquee-item">
+          <span class="tech-item-icon">
+            <svg class="tech-icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M11.9 1c-4.4 0-4.1 1.9-4.1 1.9l.01 2h4.2v.6H6.1S3 5.1 3 9.6s2.7 4.3 2.7 4.3h1.6v-2.3s-.1-2.7 2.7-2.7h4.6s2.6.04 2.6-2.5V3.8S17.4 1 11.9 1zm-2.3 1.4a.8.8 0 1 1 0 1.6.8.8 0 0 1 0-1.6z" fill="#3776ab"/>
+              <path d="M12.1 23c4.4 0 4.1-1.9 4.1-1.9l-.01-2h-4.2v-.6h5.9s3.1.4 3.1-4.1-2.7-4.3-2.7-4.3h-1.6v2.3s.1 2.7-2.7 2.7H9.4S6.8 15 6.8 17.5v2.6S6.6 23 12.1 23zm2.3-1.4a.8.8 0 1 1 0-1.6.8.8 0 0 1 0 1.6z" fill="#ffd43b"/>
+            </svg>
+          </span>
+          <span class="tech-item-name">Python</span>
+        </div>
+
+        <!-- Item 08: PostgreSQL -->
+        <div class="tech-marquee-item">
+          <span class="tech-item-icon" style="color: #336791;">
+            <svg class="tech-icon-svg" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+              <path d="M12.012 0C5.38 0 .023 5.356.023 11.988c0 5.304 3.44 9.8 8.212 11.393-.11-.958-.209-2.43.044-3.475.228-.946 1.472-6.242 1.472-6.242s-.376-.75-.376-1.859c0-1.741 1.01-3.041 2.268-3.041 1.07 0 1.586.803 1.586 1.766 0 1.076-.685 2.684-1.038 4.175-.295 1.25.627 2.269 1.858 2.269 2.23 0 3.945-2.352 3.945-5.746 0-3.004-2.158-5.105-5.242-5.105-3.82 0-6.062 2.865-6.062 5.82 0 1.154.444 2.392.998 3.064a.4.4 0 0 1 .092.383c-.102.427-.33 1.342-.375 1.53-.058.24-.193.29-.446.175-1.666-.776-2.707-3.21-2.707-5.166 0-4.207 3.056-8.07 8.814-8.07 4.628 0 8.224 3.298 8.224 7.705 0 4.598-2.898 8.298-6.92 8.298-1.351 0-2.622-.702-3.057-1.531l-.832 3.17c-.301 1.157-1.115 2.607-1.661 3.5 1.246.384 2.57.592 3.945.592 6.633 0 11.988-5.355 11.988-11.988C24 5.356 18.645 0 12.012 0z"/>
+            </svg>
+          </span>
+          <span class="tech-item-name">PostgreSQL</span>
+        </div>
+
+        <!-- Item 09: SQL -->
+        <div class="tech-marquee-item">
+          <span class="tech-item-icon" style="color: #00758f;">
+            <i class="fa-solid fa-database" aria-hidden="true"></i>
+          </span>
+          <span class="tech-item-name">SQL</span>
+        </div>
+
+        <!-- Item 10: HTML5 -->
+        <div class="tech-marquee-item">
+          <span class="tech-item-icon" style="color: #e34f26;">
+            <i class="fa-brands fa-html5" aria-hidden="true"></i>
+          </span>
+          <span class="tech-item-name">HTML5</span>
+        </div>
+
+        <!-- Item 11: CSS3 -->
+        <div class="tech-marquee-item">
+          <span class="tech-item-icon" style="color: #1572b6;">
+            <i class="fa-brands fa-css3-alt" aria-hidden="true"></i>
+          </span>
+          <span class="tech-item-name">CSS3</span>
+        </div>
+
+        <!-- Item 12: Figma -->
+        <div class="tech-marquee-item">
+          <span class="tech-item-icon">
+            <svg class="tech-icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M8 24c2.2 0 4-1.8 4-4v-4H8c-2.2 0-4 1.8-4 4s1.8 4 4 4z" fill="#0acf83"/>
+              <path d="M4 12c0-2.2 1.8-4 4-4h4v8H8c-2.2 0-4-1.8-4-4z" fill="#a259ff"/>
+              <path d="M4 4c0-2.2 1.8-4 4-4h4v8H8C5.8 8 4 6.2 4 4z" fill="#f24e1e"/>
+              <path d="M12 0h4c2.2 0 4 1.8 4 4s-1.8 4-4 4h-4V0z" fill="#ff7262"/>
+              <path d="M20 12c0 2.2-1.8 4-4 4s-4-1.8-4-4 1.8-4 4-4 4 1.8 4 4z" fill="#1abcfe"/>
+            </svg>
+          </span>
+          <span class="tech-item-name">Figma</span>
+        </div>
+
+        <!-- Item 13: Git -->
+        <div class="tech-marquee-item">
+          <span class="tech-item-icon" style="color: #f05032;">
+            <i class="fa-brands fa-git-alt" aria-hidden="true"></i>
+          </span>
+          <span class="tech-item-name">Git</span>
+        </div>
+
+        <!-- Item 14: GitHub -->
+        <div class="tech-marquee-item">
+          <span class="tech-item-icon" style="color: #24292e;">
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
+          </span>
+          <span class="tech-item-name">GitHub</span>
+        </div>
+
+        <!-- Item 15: Postman -->
+        <div class="tech-marquee-item">
+          <span class="tech-item-icon" style="color: #ff6c37;">
+            <svg class="tech-icon-svg" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+              <path d="M13.597 0C6.087 0 0 6.087 0 13.597c0 2.81 0.852 5.424 2.316 7.596L.085 23.473a.627.627 0 0 0 .783.783l2.28-2.23A13.518 13.518 0 0 0 13.597 27.2c7.51 0 13.598-6.087 13.598-13.603C27.195 6.087 21.107 0 13.597 0zm6.918 8.87a6.833 6.833 0 0 1 1.794 4.673c0 3.782-3.078 6.86-6.86 6.86a6.832 6.832 0 0 1-4.71-1.83l2.846-2.846a2.83 2.83 0 0 0 1.864.7c1.572 0 2.852-1.28 2.852-2.852 0-.69-.25-1.32-.663-1.815l2.877-2.89z"/>
+            </svg>
+          </span>
+          <span class="tech-item-name">Postman</span>
+        </div>
+
+        <!-- Item 16: Excel -->
+        <div class="tech-marquee-item">
+          <span class="tech-item-icon" style="color: #217346;">
+            <i class="fa-solid fa-file-excel" aria-hidden="true"></i>
+          </span>
+          <span class="tech-item-name">Excel</span>
+        </div>
+
+        <!-- Item 17: Draw.io -->
+        <div class="tech-marquee-item">
+          <span class="tech-item-icon" style="color: #f08705;">
+            <i class="fa-solid fa-diagram-project" aria-hidden="true"></i>
+          </span>
+          <span class="tech-item-name">Draw.io</span>
+        </div>
+
+        <!-- Item 18: Trello -->
+        <div class="tech-marquee-item">
+          <span class="tech-item-icon" style="color: #0079bf;">
+            <i class="fa-brands fa-trello" aria-hidden="true"></i>
+          </span>
+          <span class="tech-item-name">Trello</span>
+        </div>
+
+        <!-- Item 19: VS Code -->
+        <div class="tech-marquee-item">
+          <span class="tech-item-icon" style="color: #007acc;">
+            <svg class="tech-icon-svg" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+              <path d="M23.15 2.587L18.21.21a1.494 1.494 0 0 0-1.705.29l-9.46 8.63-4.12-3.128a.999.999 0 0 0-1.276.057L.327 7.276A1 1 0 0 0 .32 8.652L4.634 12 .32 15.348a1 1 0 0 0 .007 1.376l1.322 1.217a1 1 0 0 0 1.276.057l4.12-3.128 9.46 8.63a1.492 1.492 0 0 0 1.704.29l4.942-2.377A1.5 1.5 0 0 0 24 20.06V3.939a1.5 1.5 0 0 0-.85-1.352zm-5.146 14.861L10.826 12l7.178-5.448v10.896z"/>
+            </svg>
+          </span>
+          <span class="tech-item-name">VS Code</span>
+        </div>
+
+        <!-- Item 20: Bootstrap -->
+        <div class="tech-marquee-item">
+          <span class="tech-item-icon" style="color: #7952b3;">
+            <i class="fa-brands fa-bootstrap" aria-hidden="true"></i>
+          </span>
+          <span class="tech-item-name">Bootstrap</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================
+     CONTACT SECTION
+========================================= -->
+<section class="contact-section" id="lien-he">
+
+  <!-- Decorative glow -->
+  <div class="contact-glow contact-glow-1" aria-hidden="true"></div>
+  <div class="contact-glow contact-glow-2" aria-hidden="true"></div>
+
+  <div class="contact-container">
+
+    <!-- Header -->
+    <header class="contact-header">
+      <div class="contact-heading">
+        <span class="contact-badge">GET IN TOUCH</span>
+        <h2 class="contact-title">CONTACT</h2>
+        <div class="contact-title-line" aria-hidden="true">
+          <span></span>
+          <i></i>
+        </div>
+      </div>
+
+      <div class="contact-intro">
+        <span class="contact-quote-mark">“</span>
+        <p>
+          Tôi luôn sẵn sàng đón nhận cơ hội mới và trao đổi về các vị trí
+          <strong>Business Analyst</strong>, <strong>Manual Tester / QA</strong>,
+          <strong>AI-Assisted Development</strong> và <strong>Vận hành Hệ thống</strong>.
+        </p>
+      </div>
+    </header>
+
+    <!-- Contact Grid -->
+    <div class="contact-grid">
+
+      <!-- Email Card -->
+      <a href="mailto:lephanminhhai004@gmail.com" class="contact-card">
+        <div class="contact-card-icon">
+          <i class="fa-solid fa-envelope"></i>
+        </div>
+        <div class="contact-card-info">
+          <span class="contact-card-label">EMAIL TRỰC TIẾP</span>
+          <strong class="contact-card-value">lephanminhhai004@gmail.com</strong>
+        </div>
+        <i class="fa-solid fa-arrow-up-right-from-square contact-card-arrow" aria-hidden="true"></i>
+      </a>
+
+      <!-- Phone Card -->
+      <a href="tel:0337314840" class="contact-card">
+        <div class="contact-card-icon">
+          <i class="fa-solid fa-phone"></i>
+        </div>
+        <div class="contact-card-info">
+          <span class="contact-card-label">ĐIỆN THOẠI</span>
+          <strong class="contact-card-value">0337 314 840</strong>
+        </div>
+        <i class="fa-solid fa-arrow-up-right-from-square contact-card-arrow" aria-hidden="true"></i>
+      </a>
+
+      <!-- GitHub Card -->
+      <a href="https://github.com/lehai04" target="_blank" rel="noopener noreferrer" class="contact-card">
+        <div class="contact-card-icon">
+          <i class="fa-brands fa-github"></i>
+        </div>
+        <div class="contact-card-info">
+          <span class="contact-card-label">GITHUB REPOSITORY</span>
+          <strong class="contact-card-value">github.com/lehai04</strong>
+        </div>
+        <i class="fa-solid fa-arrow-up-right-from-square contact-card-arrow" aria-hidden="true"></i>
+      </a>
+
+      <!-- Location Card -->
+      <div class="contact-card contact-card--static">
+        <div class="contact-card-icon">
+          <i class="fa-solid fa-location-dot"></i>
+        </div>
+        <div class="contact-card-info">
+          <span class="contact-card-label">ĐỊA CHỈ LÀM VIỆC</span>
+          <strong class="contact-card-value">Gò Vấp, TP. Hồ Chí Minh</strong>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Contact Footer -->
+    <footer class="contact-footer">
+      <div class="contact-signature">
+        <span class="contact-star">✦</span>
+        <div>
+          <span class="signature-script">Thank you</span>
+          <span class="signature-text">
+            FOR VISITING<br>
+            LET'S CONNECT
+          </span>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.3.23/dist/lenis.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js" defer></script>
+</body>
+</html>

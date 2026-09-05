@@ -1,0 +1,395 @@
+/* ========================================
+   TRANG GIỚI THIỆU
+======================================== */
+
+#portfolioScene {
+  --intro-background: #f8f8f8;
+  --intro-red: #b71923;
+  --intro-ink: #671b25;
+  --intro-line: #e6cbd0;
+}
+
+/* Nền hiện ra sau khi chữ PORTFOLIO tách */
+#portfolioScene::after {
+  background: var(--intro-background);
+}
+
+/* Khung giới thiệu nằm cùng vị trí với banner */
+#aboutContent {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+
+  display: grid;
+  grid-template-columns: 45% minmax(0, 1fr);
+  gap: 4%;
+
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: calc(var(--navbar-height, 78px) + clamp(10px, 2vh, 20px)) 4% 28px 3%;
+
+  color: var(--intro-red);
+  font-family: Arial, sans-serif;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(22px);
+
+  transition:
+    opacity .55s ease,
+    transform .7s var(--motion-ease, ease),
+    visibility 0s .7s;
+}
+
+#portfolioScene.is-open #aboutContent {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
+  transition-delay: .5s, .5s, 0s;
+}
+
+/* ========================================
+   CỘT TRÁI
+======================================== */
+
+#aboutContent .intro-visual {
+  position: relative;
+  min-width: 0;
+}
+
+#aboutContent .intro-display-title {
+  margin: 0;
+  color: var(--intro-red);
+
+  font-family: "Anton", sans-serif;
+  font-size: clamp(64px, 10vw, 180px);
+  font-weight: 400;
+  line-height: .95;
+  letter-spacing: 0.025em;
+  white-space: nowrap;
+}
+
+/*
+  Dùng lại khung ảnh của banner.
+  Ảnh nằm trước ABOUT ME, không tạo ảnh thứ hai.
+*/
+#portfolioScene.is-open .portrait {
+  z-index: 3;
+  top: 15%;
+  left: 3%;
+  width: 38%;
+  height: 85%;
+
+  border-radius: 0;
+  transform: translateX(0);
+  pointer-events: none;
+}
+
+/* Giữ nguyên dáng ảnh tách nền, không crop thành thẻ */
+#portfolioScene .portrait-about {
+  object-fit: contain;
+  object-position: center bottom;
+}
+
+/* ========================================
+   CỘT PHẢI
+======================================== */
+
+#aboutContent .intro-information {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: clamp(18px, 2.5vh, 32px);
+  min-width: 0;
+  padding-top: 16px;
+}
+
+#aboutContent .intro-page-number {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+#aboutContent .intro-header {
+  padding-right: 12px;
+}
+
+#aboutContent .intro-name {
+  margin: 0 0 14px;
+  color: var(--intro-red);
+
+  font-family: "Anton", sans-serif;
+  font-size: clamp(38px, 4.6vw, 84px);
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: 0.025em;
+
+  /* Cho phép xuống dòng nếu màn hình thiếu chỗ */
+  overflow-wrap: normal;
+  text-wrap: balance;
+}
+
+#aboutContent .intro-roles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  font-size: clamp(12px, .95vw, 16px);
+  font-weight: 700;
+  line-height: 1.5;
+}
+#aboutContent .intro-roles li {
+  background: linear-gradient(
+    90deg, #731919, #e52b2b, #e52b2b
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+
+  font-weight: 700;
+}
+
+#aboutContent .intro-biography {
+  max-width: 660px;
+  color: var(--intro-ink);
+  font-size: clamp(15px, 1.25vw, 21px);
+  line-height: 1.65;
+  text-align: left;
+}
+
+#aboutContent .intro-biography p {
+  margin: 0 0 12px;
+}
+
+#aboutContent .intro-biography p:last-child {
+  margin-bottom: 0;
+}
+
+#aboutContent .intro-biography strong {
+  color: var(--intro-red);
+}
+
+/* ========================================
+   LIÊN HỆ
+======================================== */
+
+.intro-contacts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.intro-contact {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #f0f2f5;
+  padding: 12px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #b32d2e;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  width: fit-content;
+  transition: all 0.2s ease;
+}
+
+.intro-contact:hover {
+  background-color: #e4e7eb;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+.intro-contact i {
+  font-size: 16px;
+}
+
+/* Nút Tải CV nổi bật */
+.intro-contact.intro-contact-cv {
+  background: linear-gradient(135deg, #b71923 0%, #d82b38 100%);
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(183, 25, 35, 0.3);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.intro-contact.intro-contact-cv:hover {
+  background: linear-gradient(135deg, #9b131c 0%, #c4202c 100%);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(183, 25, 35, 0.45);
+}
+
+.intro-contact.intro-contact-cv i {
+  color: #ffffff;
+  transition: transform 0.2s ease;
+}
+
+.intro-contact.intro-contact-cv:hover i {
+  transform: translateY(2px);
+}
+/* ========================================
+   CHỈ SỐ NỔI BẬT
+======================================== */
+
+#aboutContent .intro-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0;
+
+  margin: 4px 0 0;
+  padding: 22px 12px;
+
+  border-radius: 16px;
+  background: #fff;
+}
+
+#aboutContent .intro-stat {
+  min-width: 0;
+  padding: 0 12px;
+}
+
+#aboutContent .intro-stat + .intro-stat {
+  border-left: 1px solid #eee3e5;
+}
+
+#aboutContent .intro-stat dt {
+  margin: 0 0 10px;
+  color: var(--intro-red);
+
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: .06em;
+}
+
+#aboutContent .intro-stat dd {
+  margin: 0 0 7px;
+  color: var(--intro-ink);
+
+  font-size: clamp(21px, 2vw, 34px);
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+#aboutContent .intro-stat dd span {
+  font-size: .7em;
+}
+
+#aboutContent .intro-stat p {
+  margin: 0;
+  color: #725d62;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+/* ========================================
+   TABLET, ĐIỆN THOẠI VÀ MÀN HÌNH THẤP
+======================================== */
+
+/*
+  Cho phép cuộn khi nội dung không vừa màn hình.
+  Giữ phần giới thiệu trong luồng để không bị cắt.
+*/
+@media (max-width: 900px), (max-height: 650px) {
+  #portfolioScene {
+    height: auto;
+    min-height: 100svh; /* navbar là fixed, không cần trừ navbar-height */
+  }
+
+  #aboutContent {
+    position: relative;
+    inset: auto;
+
+    grid-template-columns: 1fr;
+    gap: 26px;
+
+    height: auto;
+    min-height: 100svh;
+    padding: 30px 6% 40px;
+  }
+
+  #aboutContent .intro-visual {
+    height: 380px;
+  }
+
+  #aboutContent .intro-display-title {
+    font-size: clamp(64px, 16vw, 130px);
+    text-align: center;
+  }
+
+  #portfolioScene.is-open .portrait {
+    top: 80px;
+    left: 50%;
+    width: min(78%, 400px);
+    height: 330px;
+    border-radius: 0;
+    transform: translateX(-50%);
+  }
+
+  #aboutContent .intro-information {
+    gap: 24px;
+    padding-top: 24px;
+  }
+
+  #aboutContent .intro-name {
+    font-size: clamp(34px, 7vw, 64px);
+    padding-right: 12px;
+  }
+
+  #aboutContent .intro-roles {
+    font-size: 13px;
+  }
+
+  #aboutContent .intro-biography {
+    max-width: none;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  #aboutContent .intro-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px 0;
+    padding: 20px 10px;
+  }
+
+  #aboutContent .intro-stat:nth-child(3) {
+    border-left: 0;
+  }
+
+  #aboutContent .intro-stat dd {
+    font-size: 28px;
+  }
+
+  #aboutContent .intro-contacts {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
+
+/* ========================================
+   GIẢM CHUYỂN ĐỘNG
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  #aboutContent,
+  #aboutContent *,
+  #portfolioScene .portrait {
+    transition: none !important;
+  }
+}
